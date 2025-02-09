@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    padding: 0px;
+}
+
+
+.circle {
+    width: 25%; 
+    border-radius: 50%;
+    border: solid 15px rgb(20, 20, 20)
+    
+}
+
+#ice-img{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}

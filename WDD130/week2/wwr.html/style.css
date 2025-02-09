@@ -1,6 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-sans-uniquifier {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+#logo-link {
+    padding-top: 5px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -16,9 +42,14 @@ main section {
 }
 
 nav a {
+    padding: 35px;
     text-decoration: none;
     text-align: center;
     color:#0d2a35
+}
+
+.icon {
+    padding-top: 10px;
 }
 
 #background {
@@ -39,34 +70,44 @@ nav a:hover {
 }
 
 .book, .join {
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-size: 18px;
     text-decoration: none;
     background-color: #68bddc;
     color:#0d2a35
 }
 
 .book:hover, .join:hover {
-    background-color:#cd876b;
+    background-color:#08516e;
     color:#0d2a35
 }
 
 #background {
-    background-color: #313e43;
+    background-color: #6d9caf;
 }
 
 .msg {
+    font-size: .8em;
     background-color: #ef8156;
+    padding: 35px;
 }
 .msg h2{
+    font-size: .75em;
     color: #0d2a35;
 }
 
 .msg p {
     color: #0d2a35;
+    padding-bottom: 15px;
 }
 
 footer {
+    margin-top: 200px;
+    padding: 25px 50px;
     font-size: 1.2em;
-    background-color: #8e4b31;
+    background-color: #d86c42;
     color: #0d2a35;
 }
 
@@ -80,6 +121,8 @@ footer a:hover{
 }
 
 .home-title {
+    margin-top: 12px;
+    font-size: 2.5em;
     color:#0d2a35
 }
 
@@ -97,4 +140,20 @@ h4 {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card  {
+    width: 45%;
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #f39773;
+}
+
+main section img {
+    box-sizing: border-box;
 }
