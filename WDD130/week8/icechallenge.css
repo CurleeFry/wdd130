@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-row: 200px 1fr;
+    gap: 10px;
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 50%;
+    background-color: aquamarine;
+    color: blueviolet;
+    text-align: center;
+}
+
+#triangle {
+    width: 200px;
+    height: 200px;
+    grid-column: 4;
+    grid-row: 1;
+    background-color: olive;
+    color: salmon;
+    text-align: center;
+    border-top: 0;
+    border-bottom: 200px;
+    border-left: 100px;
+    border-right: 100px;
+}
+
+#square {
+    width: 200px;
+    height: 200px;
+    grid-column: 6;
+    grid-row: 1;
+    background-color: greenyellow;
+    color: brown;
+    text-align: center;
+}
+
+#enter {
+    border-radius: 10px;
+    /* height: 30px; */
+    width: 300px;
+    grid-row: 3;
+    grid-column: 1/ 8;
+    justify-self: center;
+    background-color: goldenrod;
+    color: beige;
+    text-align: center;
+}
