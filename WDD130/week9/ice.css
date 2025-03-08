@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.div1 {
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
