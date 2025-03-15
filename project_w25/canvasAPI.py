@@ -1,7 +1,7 @@
 # import requests
 
 # # Replace with your actual access token
-# ACCESS_TOKEN = "10706~PPJ7aYmYnTtCVVXyrx6yZ8y2wcC8N9QTNcUGDm33vFrFw39yYBW2VGecBT3fMR2V"
+# ACCESS_TOKEN = ""
 # API_URL = 'https://byui.instructure.com/api/v1/'
 
 # # Set up the headers with the access token
