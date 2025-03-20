@@ -11,9 +11,9 @@ for quote, author in zip(quotes, authors):
     print(quote.text + " - " + author.text)
 
 
-scrape_my_site = requests.get("https://curleefry.github.io/wdd130/WDD130/wwr.html/index.html")
-scrape2 = BeautifulSoup(scrape_my_site.text, "html.parser")
+# scrape_my_site = requests.get("https://curleefry.github.io/wdd130/WDD130/wwr.html/index.html")
+# scrape2 = BeautifulSoup(scrape_my_site.text, "html.parser")
 
-target = scrape2.select_one("h1.home-title")
+# target = scrape2.select_one("h1.home-title")
 
-print(target.text)
+# print(target.text)

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Reader</title>
+</head>
+<body>
+    <h1>Quotes from CSV</h1>
+    <ul id="quoteList"></ul>
+
+    <script>
+        async function readCSV() {
+            const response = await fetch('quotes.csv?_=' + new Date().getTime()); // Prevent caching
+            const data = await response.text();
+            
+            const rows = data.split('\n').slice(1); // Remove header
+            let quotes = {};
+            
+            rows.forEach((row, index) => {
+                let cols = row.split(',');
+                if (cols.length >= 2) {
+                    let quote = cols[0].replace(/"/g, '');
+                    let author = cols[1].replace(/"/g, '');
+                    quotes[`quote${index + 1}`] = { quote, author };
+                }
+            });
+            
+            displayQuotes(quotes);
+        }
+
+        function displayQuotes(quotes) {
+            const list = document.getElementById('quoteList');
+            list.innerHTML = '';
+            Object.values(quotes).forEach(q => {
+                let li = document.createElement('li');
+                li.textContent = `"${q.quote}" - ${q.author}`;
+                list.appendChild(li);
+            });
+        }
+
+        setInterval(readCSV, 1000); // Refresh every second
+        readCSV();
+    </script>
+</body>
+</html>
+
