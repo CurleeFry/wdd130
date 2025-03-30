@@ -52,8 +52,6 @@ nav a {
     padding-top: 10px;
 }
 
-
-
 body {
     background-color: #9cc9da; 
 }
@@ -148,6 +146,7 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
+
 .rivers-card, .camping-card, .rapids-card  {
     width: 45%;
     margin: 200px 0;
@@ -194,7 +193,6 @@ nav{
 #hero-msg{
     grid-column: 2/3;
     grid-row: 1/2;
-
 }
 
 #hero-msg h4 {

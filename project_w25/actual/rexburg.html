@@ -4,51 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tropical Smoothie Cafe Labor Manager+</title>
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="sub_site.css">
 </head>
 <body>
-    <h2>Rexburg Location Labor Information</h2>
+    <h2 id= "title">Rexburg Location Labor Information</h2>
     <div id="greenbox">
-        <h2>Date:</h2>
-        <!--Javascript / Python will be inserted here-->
-        <h2>Time:</h2>
-        <!--Javascript / Python will be inserted here-->
-        <h2>Daily Labor:</h2>
-        <!--Javascript / Python will be inserted here-->
-        <h2>Current Hourly Rate:</h2>
-        <!--Javascript / Python will be inserted here-->
+        <div id="innerboxg">
+            <h2>Date:</h2>
+            <h1>DD/M/YYYY</h1><!--Javascript / Python will be inserted here-->
+            <h2>Time:</h2>
+            <h1>XX:XX</h1><!--Javascript / Python will be inserted here-->
+            <h2>Daily Labor:</h2>
+            <h1>XX%</h1><!--Javascript / Python will be inserted here-->
+            <h2>Current Hourly Rate:</h2>
+            <h1>XX%</h1><!--Javascript / Python will be inserted here-->
+        </div>
     </div>
     <div id="yellowbox">
-        <h2>Labor by time of day:</h2>
-        <div id="morning block">
-            <p>
-                Morning
-                6:00AM - 11:30AM
-            </p>
-            <!--Javascript / Python will be inserted here-->
+        <div id="innerboxy">
+            <h2 id="y_title">Labor by time of day:</h2>
+            <div id="morning_block">
+                <p>
+                     Morning<br>
+                     6:00AM - 11:30AM
+                </p>
+                <h1 class="right">XX%</h1><!--Javascript / Python will be inserted here-->
+            </div>
+            <div id="afternoon_block">
+                <p>
+                    Afternoon<br>
+                    11:30AM - 5:00PM
+                </p>
+                <h1 class="right">XX%</h1><!--Javascript / Python will be inserted here-->
+            </div>
+            <div id="evening_block">
+                <p>
+                     Evening<br>
+                    5:00PM - 10:30PM
+                </p>
+                <h1 class="right">XX%</h1><!--Javascript / Python will be inserted here--> 
+            </div>       
         </div>
-        <div id="afternoon block"></div>
-            <p>
-                Afternoon
-                11:30AM - 5:00PM
-            </p>
-            <!--Javascript / Python will be inserted here-->
-        <div id="evening block"></div>
-            <p>
-                Evening
-                5:00PM - 10:30PM
-            </p>
-            <!--Javascript / Python will be inserted here-->
     </div>
     <div id="orangebox">
-        <p>Date</p>
-        <p>Daily Labor</p>
-        <p>Morning</p>
-        <p>Afternoon</p>
-        <p>Evening</p>
-        <!--This area will have a big grid that requires values pulled from the Javascript / Python.-->
+        <div id="innerboxo">
+            <h2 id="o_title">Weekly Labor Trends:</h2>
+            <div id="turbogrid">
+                <p>Date</p>
+                <p>Daily Labor</p>
+                <p>Morning</p>
+                <p>Afternoon</p>
+                <p>Evening</p>
+                <p class="current_date" class="date">X</p>
+                <p class="current_date" class="laborpercent">X</p>
+                <p class="current_date" class="morning">X</p>
+                <p class="current_date" class="evening">X</p>
+                <p class="current_date" class="afternoon">X</p>
+                <p class="current-1" class="date">X</p>
+                <p class="current-1" class="laborpercent">X</p>
+                <p class="current-1" class="morning">X</p>
+                <p class="current-1" class="evening">X</p>
+                <p class="current-1" class="afternoon">X</p>
+                <p class="current-2" class="date">X</p>
+                <p class="current-2" class="laborpercent">X</p>
+                <p class="current-2" class="morning">X</p>
+                <p class="current-2" class="evening">X</p>
+                <p class="current-2" class="afternoon">X</p>
+                <p class="current-3" class="date">X</p>
+                <p class="current-3" class="laborpercent">X</p>
+                <p class="current-3" class="morning">X</p>
+                <p class="current-3" class="evening">X</p>
+                <p class="current-3" class="afternoon">X</p>
+                <p class="current-4" class="date">X</p>
+                <p class="current-4" class="laborpercent">X</p>
+                <p class="current-4" class="morning">X</p>
+                <p class="current-4" class="evening">X</p>
+                <p class="current-4" class="afternoon">X</p>
+                <p class="current-5" class="date">X</p>
+                <p class="current-5" class="laborpercent">X</p>
+                <p class="current-5" class="morning">X</p>
+                <p class="current-5" class="evening">X</p>
+                <p class="current-5" class="afternoon">X</p>
+                <p class="current-6" class="date">X</p>
+                <p class="current-6" class="laborpercent">X</p>
+                <p class="current-6" class="morning">X</p>
+                <p class="current-6" class="evening">X</p>
+                <p class="current-6" class="afternoon">X</p>
+                <!--This area will have a big grid that requires values pulled from the Javascript / Python.-->
+            </div>    
+        </div>
     </div>
-    <a href="manager_plus_home.html">Return to Homepage</a>
+    <a id="homepage" href="manager_plus_home.html">Return to Homepage</a>
     <img src="tropmanpluslogo.png" alt="site logo">
 </body>
 </html>
