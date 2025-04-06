@@ -3,16 +3,30 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
+    /* margin-top: 15vh; */
     font-family: "Noto Sans", sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    background: url('threesmoothies.jpg') center/cover no-repeat;
+    opacity: 0.5; 
+    z-index: -1;
 }
 
 #title {
-    align-content: center;
     grid-column: 2;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     font-size: 25px;
-    height: 10vh;
+    margin-top: 5vh;
 }
 
 #greenbox {
